@@ -2,6 +2,7 @@ const yes = document.getElementById('yes');
 const no = document.getElementById('no');
 const nadpis = document.getElementById('nadpis');
 
+
 let idk = [
     "Proč 😭",
     "😭😭😭😭😭😭😭😭😭",
@@ -19,6 +20,7 @@ no.addEventListener('mouseover', () => {
     no.style.left = x + 'px';
     no.style.top = y + 'px';
     nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
+
 });
 
 yes.onclick = () => {
