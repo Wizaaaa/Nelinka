@@ -46,7 +46,8 @@ yes.onclick = () => {
         yes.style.top = '55%';
         no.style.top = '55%';
     }
-
+    yes.style.width = '80px';
+    yes.style.height = '50px';
 }
 
 no.addEventListener('mouseover', () => {
