@@ -1,3 +1,9 @@
+const detectDeviceType = () =>
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+      ? 'Mobile'
+      : 'Desktop'; 
+  
+
 const yes = document.getElementById('yes');
 const no = document.getElementById('no');
 const nadpis = document.getElementById('nadpis');
@@ -29,13 +35,13 @@ stav = true;
 
 yes.onclick = () => {
     stav = false;
-    nadpis.innerHTML = 'JUPIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII';
+    nadpis.innerHTML = 'JUPIIIIIIIIIIIIIIIIIIIIIIII';
     src.appendChild(img);
     container.style.flexDirection = 'column';
 }
 
 no.addEventListener('mouseover', () => {
-    if (stav == true) {
+    if (stav == true && detectDeviceType() == 'Desktop') {
         const x = Math.random() * 1000;
         const y = Math.random() * 900;
         no.style.left = x + 'px';
