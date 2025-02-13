@@ -33,7 +33,7 @@ body{
     cursor: pointer;
 }
 #yes {
-    left: 30%;
+    left: 25%;
 }
 
 @media screen and (min-width: 1000px) {
