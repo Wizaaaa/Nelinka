@@ -50,3 +50,9 @@ no.addEventListener('mouseover', () => {
     }
 });
 
+
+no.onclick = () => {
+    if (stav == true && detectDeviceType() == 'Mobile') {
+        nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
+    }
+}
