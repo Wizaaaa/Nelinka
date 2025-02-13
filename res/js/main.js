@@ -50,9 +50,3 @@ no.addEventListener('mouseover', () => {
     }
 });
 
-
-no.onclick = () => {
-    if (stav == true) {
-        nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
-    }
-}
