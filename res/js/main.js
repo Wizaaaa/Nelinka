@@ -59,9 +59,13 @@ no.addEventListener('mouseover', () => {
     }
 });
 
+let bigger = 10;
 
 no.onclick = () => {
     if (stav == true && detectDeviceType() == 'Mobile') {
+        bigger += 10;
         nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
+        yes.style.width = (80 + bigger) + "px";
+        yes.style.height = (50 + bigger) + "px";
     }
 }
