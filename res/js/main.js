@@ -3,7 +3,6 @@ const detectDeviceType = () =>
       ? 'Mobile'
       : 'Desktop'; 
   
-
 const yes = document.getElementById('yes');
 const no = document.getElementById('no');
 const nadpis = document.getElementById('nadpis');
@@ -11,7 +10,6 @@ const container = document.getElementById('container');
 
 const  img = document.createElement('img');
 img.src = 'https://media1.tenor.com/m/arqlNu8gyJYAAAAC/cat-cat-jumping.gif';
-const src = document.getElementById('container');
 
 let idk = [
     "Proč 😭",
@@ -36,22 +34,15 @@ stav = true;
 yes.onclick = () => {
     stav = false;
     nadpis.innerHTML = 'JUPIIIIIIIIIIIIIIIIIIIIIIII';
-    src.appendChild(img);
-    container.style.flexDirection = 'column';
-    no.style.left = '50%';
-    if ( detectDeviceType() == 'Desktop') {
-        yes.style.top = '45%';
-        no.style.top = '45%';
-    }else {
-        yes.style.top = '55%';
-        no.style.top = '55%';
-    }
+    container.insertBefore(img, nadpis.nextSibling);
+    no.style.position = 'static';
     yes.style.width = '80px';
     yes.style.height = '50px';
 }
 
 no.addEventListener('mouseover', () => {
     if (stav == true && detectDeviceType() == 'Desktop') {
+        no.style.position = "absolute";
         const x = Math.random() * 1000;
         const y = Math.random() * 900;
         no.style.left = x + 'px';

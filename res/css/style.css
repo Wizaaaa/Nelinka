@@ -8,23 +8,26 @@ body{
 #container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
 }
 #container h1{
+    text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 #container img {
     width: 200px;
     height: 200px;
-    margin-left: 15%;
+    margin: 0 auto;
+}
+#container2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 #no, #yes {
-    position: absolute;
-    left: 50%;
-    top: 25%;
     width: 80px;
     height: 50px;
     border: 0;
@@ -33,7 +36,6 @@ body{
     cursor: pointer;
 }
 #yes {
-    left: 25%;
     margin-right: 5px;
 }
 #no {
