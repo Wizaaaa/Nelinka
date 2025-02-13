@@ -39,6 +39,14 @@ yes.onclick = () => {
     src.appendChild(img);
     container.style.flexDirection = 'column';
     no.style.left = '50%';
+    if ( detectDeviceType() == 'Desktop') {
+        yes.style.top = '45%';
+        no.style.top = '45%';
+    }else {
+        yes.style.top = '55%';
+        no.style.top = '55%';
+    }
+
 }
 
 no.addEventListener('mouseover', () => {
