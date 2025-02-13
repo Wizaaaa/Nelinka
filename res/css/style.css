@@ -46,16 +46,10 @@ body{
     #yes {
         left: 37%;
     }
-
-    #container img {
-        margin-left: 5%;
-    }
-    
 }
 
 @media screen and (min-width: 1300px) {
     #yes {
         left: 45%;
     }
-    
 }
