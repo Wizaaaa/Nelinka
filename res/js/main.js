@@ -46,5 +46,7 @@ no.addEventListener('mouseover', () => {
 
 
 no.onclick = () => {
-    nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
+    if (stav == true) {
+        nadpis.innerHTML = idk[Math.floor(Math.random() * idk.length)];
+    }
 }
