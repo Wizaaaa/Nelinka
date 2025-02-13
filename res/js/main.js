@@ -38,6 +38,7 @@ yes.onclick = () => {
     nadpis.innerHTML = 'JUPIIIIIIIIIIIIIIIIIIIIIIII';
     src.appendChild(img);
     container.style.flexDirection = 'column';
+    no.style.left = '50%';
 }
 
 no.addEventListener('mouseover', () => {
