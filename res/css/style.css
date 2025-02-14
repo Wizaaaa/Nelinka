@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -40,16 +39,4 @@ body{
 }
 #no {
     margin-left: 5px;
-}
-
-@media screen and (min-width: 1000px) {
-    #yes {
-        left: 37%;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    #yes {
-        left: 45%;
-    }
 }
